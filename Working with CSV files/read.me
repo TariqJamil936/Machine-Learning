@@ -1,0 +1,25 @@
+📘 CSV File Handling using Pandas
+This project demonstrates various ways to load, read, and manipulate CSV files using the pandas library in Python.
+It covers all essential parameters and techniques needed for efficient data handling.
+
+🔹 Key Concepts Covered
+Importing pandas
+Load the pandas library to work with structured data efficiently.
+Opening CSV Files
+From local storage using pd.read_csv('file.csv')
+From a URL using the requests module and StringIO
+Customizing File Reading
+sep → specify a custom separator (e.g., \t for TSV files)
+index_col → set a specific column as the DataFrame index
+header → choose which row to use as column headers
+usecols → select specific columns to read
+squeeze → read a single column as a pandas Series
+nrows & skiprows → control how many rows to read or skip
+encoding → handle files with different character encodings (e.g., "latin-1")
+error_bad_lines=False → skip lines with parsing errors
+dtype → set data types for specific columns
+parse_dates → automatically parse date columns
+converters → apply custom functions to transform column values
+na_values → define custom missing value indicators
+Reading Large Datasets in Chunks
+Use chunksize to load large files in smaller portions and process them iteratively.
