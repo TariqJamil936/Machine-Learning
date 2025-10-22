@@ -1,0 +1,63 @@
+## 🎬 Project Title: Movie Data Collection Using APIs
+
+
+🔍 **Objective**
+
+The goal of this project is to collect and organize real-time movie data from online databases using APIs. Two sources are used:
+
+ **The Movie Database (TMDB)**
+ **IMDB (via RapidAPI)**
+
+The collected data is then converted into structured datasets (CSV files) for further analysis in Data Science or Machine Learning projects.
+
+
+### ⚙️ **Tools & Libraries Used**
+
+* **Python**
+* **Pandas** → for handling and storing tabular data
+* **Requests** → for accessing data from APIs
+* **APIs** → for fetching live online data
+
+
+### 🎯 **Process Summary**
+
+#### **1. TMDB API**
+
+* A request is sent to TMDB’s “Top Rated Movies” API using a unique API key.
+* The response is in JSON format containing details like movie ID, title, overview, release date, popularity, and ratings.
+* A loop is used to fetch data from **multiple pages** (1 to 428), collecting thousands of movies.
+* All pages are combined into a single Pandas DataFrame and saved as **`movies.csv`**.
+
+#### **2. IMDB API (via RapidAPI)**
+
+* Another API call is made using RapidAPI to get **Top 100 IMDB Movies**.
+* The data is also received in JSON format and converted into a DataFrame.
+* Only selected columns (rank, title, genre, rating, year, etc.) are kept.
+* Ratings are converted to numeric format for easier analysis.
+* The dataset is saved as **`imdb-top-100-movies.csv`**.
+
+
+### 🌐 **Why We Use APIs**
+
+APIs (Application Programming Interfaces) allow communication between a program and an online data source.
+They help in:
+
+* Getting **real-time, updated** information automatically
+* Avoiding manual data downloads
+* Working with **large, dynamic datasets**
+* Saving time and ensuring **accuracy and consistency**
+
+In this project, APIs were used to fetch up-to-date movie data from official sources automatically.
+
+
+### 📊 **Results**
+
+* **`movies.csv`** → A large dataset of top-rated movies from TMDB
+* **`imdb-top-100-movies.csv`** → A dataset of top 100 movies from IMDB
+* Both datasets are ready for use in analytics, visualization, and recommendation systems.
+
+
+### 🧠 **Conclusion**
+
+This project demonstrates how APIs can be used to collect live data efficiently. By using Python’s `requests` and `pandas` libraries, we can automate data collection, convert raw JSON into structured DataFrames, and save them for further use in Data Science applications.
+
