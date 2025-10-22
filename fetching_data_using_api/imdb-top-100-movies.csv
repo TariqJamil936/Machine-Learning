@@ -1,0 +1,101 @@
+rank,title,genre,rating,id,year,imdbid
+1,The Shawshank Redemption,['Drama'],9.3,top1,1994,tt0111161
+2,The Godfather,"['Crime', 'Drama']",9.2,top2,1972,tt0068646
+3,The Dark Knight,"['Action', 'Crime', 'Drama']",9.0,top3,2008,tt0468569
+4,The Godfather Part II,"['Crime', 'Drama']",9.0,top4,1974,tt0071562
+5,12 Angry Men,"['Crime', 'Drama']",9.0,top5,1957,tt0050083
+6,Schindler's List,"['Biography', 'Drama', 'History']",9.0,top6,1993,tt0108052
+7,The Lord of the Rings: The Return of the King,"['Action', 'Adventure', 'Drama']",9.0,top7,2003,tt0167260
+8,Pulp Fiction,"['Crime', 'Drama']",8.9,top8,1994,tt0110912
+9,The Lord of the Rings: The Fellowship of the Ring,"['Action', 'Adventure', 'Drama']",8.8,top9,2001,tt0120737
+10,"The Good, the Bad and the Ugly","['Adventure', 'Western']",8.8,top10,1966,tt0060196
+11,Forrest Gump,"['Drama', 'Romance']",8.8,top11,1994,tt0109830
+12,Fight Club,['Drama'],8.8,top12,1999,tt0137523
+13,The Lord of the Rings: The Two Towers,"['Action', 'Adventure', 'Drama']",8.8,top13,2002,tt0167261
+14,Inception,"['Action', 'Adventure', 'Sci-Fi']",8.7,top14,2010,tt1375666
+15,Star Wars: Episode V - The Empire Strikes Back,"['Action', 'Adventure', 'Fantasy']",8.7,top15,1980,tt0080684
+16,The Matrix,"['Action', 'Sci-Fi']",8.7,top16,1999,tt0133093
+17,Goodfellas,"['Biography', 'Crime', 'Drama']",8.7,top17,1990,tt0099685
+18,Spider-Man: Across the Spider-Verse,"['Animation', 'Action', 'Adventure']",8.7,top18,2023,tt9362722
+19,Interstellar,"['Adventure', 'Drama', 'Sci-Fi']",8.7,top19,2014,tt0816692
+20,One Flew Over the Cuckoo's Nest,['Drama'],8.6,top20,1975,tt0073486
+21,Se7en,"['Crime', 'Drama', 'Mystery']",8.6,top21,1995,tt0114369
+22,It's a Wonderful Life,"['Drama', 'Family', 'Fantasy']",8.6,top22,1946,tt0038650
+23,Seven Samurai,"['Action', 'Drama']",8.6,top23,1954,tt0047478
+24,The Silence of the Lambs,"['Crime', 'Drama', 'Thriller']",8.6,top24,1991,tt0102926
+25,Saving Private Ryan,"['Drama', 'War']",8.6,top25,1998,tt0120815
+26,City of God,"['Crime', 'Drama']",8.6,top26,2002,tt0317248
+27,Life Is Beautiful,"['Comedy', 'Drama', 'Romance']",8.6,top27,1997,tt0118799
+28,The Green Mile,"['Crime', 'Drama', 'Fantasy']",8.6,top28,1999,tt0120689
+29,Star Wars: Episode IV - A New Hope,"['Action', 'Adventure', 'Fantasy']",8.6,top29,1977,tt0076759
+30,Terminator 2: Judgment Day,"['Action', 'Sci-Fi']",8.6,top30,1991,tt0103064
+31,Spirited Away,"['Animation', 'Adventure', 'Family']",8.6,top31,2001,tt0245429
+32,Oppenheimer,"['Biography', 'Drama', 'History']",8.6,top32,2023,tt15398776
+33,Harakiri,"['Action', 'Drama', 'Mystery']",8.6,top33,1962,tt0056058
+34,Back to the Future,"['Adventure', 'Comedy', 'Sci-Fi']",8.5,top34,1985,tt0088763
+35,The Pianist,"['Biography', 'Drama', 'Music']",8.5,top35,2002,tt0253474
+36,Psycho,"['Horror', 'Mystery', 'Thriller']",8.5,top36,1960,tt0054215
+37,Parasite,"['Drama', 'Thriller']",8.5,top37,2019,tt6751668
+38,Gladiator,"['Action', 'Adventure', 'Drama']",8.5,top38,1994,tt0172495
+39,The Lion King,"['Animation', 'Adventure', 'Drama']",8.5,top39,1994,tt0110357
+40,Léon: The Professional,"['Action', 'Crime', 'Drama']",8.5,top40,1994,tt0110413
+41,American History X,"['Crime', 'Drama']",8.5,top41,2000,tt0120586
+42,The Departed,"['Crime', 'Drama', 'Thriller']",8.5,top42,1998,tt0407887
+43,Whiplash,"['Drama', 'Music']",8.5,top43,2014,tt2582802
+44,The Prestige,"['Drama', 'Mystery', 'Sci-Fi']",8.5,top44,2006,tt0482571
+45,The Usual Suspects,"['Crime', 'Drama', 'Mystery']",8.5,top45,1995,tt0114814
+46,Grave of the Fireflies,['Animation'],8.5,top46,1988,tt0095327
+47,Casablanca,"['Drama', 'Romance', 'War']",8.5,top47,1942,tt0034583
+48,The Intouchables,"['Biography', 'Comedy', 'Drama']",8.5,top48,2011,tt1675434
+49,Modern Times,"['Comedy', 'Drama', 'Romance']",8.5,top49,1936,tt0027977
+50,Cinema Paradiso,"['Drama', 'Romance']",8.5,top50,1988,tt0095765
+51,Once Upon a Time in the West,['Western'],8.5,top51,1968,tt0064116
+52,Rear Window,"['Mystery', 'Thriller']",8.5,top52,1954,tt0047396
+53,Alien,"['Horror', 'Sci-Fi']",8.5,top53,1979,tt0078748
+54,City Lights,"['Comedy', 'Drama', 'Romance']",8.5,top54,1931,tt0021749
+55,Django Unchained,"['Drama', 'Western']",8.5,top55,2012,tt1853728
+56,Apocalypse Now,"['Drama', 'Mystery', 'War']",8.4,top56,1979,tt0078788
+57,Memento,"['Mystery', 'Thriller']",8.4,top57,2000,tt0209144
+58,Indiana Jones and the Raiders of the Lost Ark,"['Action', 'Adventure']",8.4,top58,1981,tt0082971
+59,WALL·E,"['Animation', 'Adventure', 'Family']",8.4,top59,2008,tt0910970
+60,The Lives of Others,"['Drama', 'Mystery', 'Thriller']",8.4,top60,2006,tt0405094
+61,Sunset Blvd.,"['Drama', 'Film-Noir']",8.4,top61,1950,tt0043014
+62,Paths of Glory,"['Drama', 'War']",8.4,top62,1957,tt0050825
+63,Avengers: Infinity War,"['Action', 'Adventure', 'Sci-Fi']",8.4,top63,2018,tt4154756
+64,The Shining,"['Drama', 'Horror']",8.4,top64,1980,tt0081505
+65,The Great Dictator,"['Comedy', 'Drama', 'War']",8.4,top65,1940,tt0032553
+66,Witness for the Prosecution,"['Crime', 'Drama', 'Mystery']",8.4,top66,1957,tt0051201
+67,Spider-Man: Into the Spider-Verse,"['Animation', 'Action', 'Adventure']",8.4,top67,2018,tt4633694
+68,Aliens,"['Action', 'Adventure', 'Sci-Fi']",8.4,top68,1986,tt0090605
+69,Inglourious Basterds,"['Adventure', 'Drama', 'War']",8.4,top69,2009,tt0361748
+70,The Dark Knight Rises,"['Action', 'Drama']",8.4,top70,2012,tt1345836
+71,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,"['Comedy', 'War']",8.4,top71,1964,tt0057012
+72,Oldboy,"['Action', 'Drama', 'Mystery']",8.4,top72,2003,tt0364569
+73,Coco,"['Animation', 'Adventure', 'Comedy']",8.4,top73,2017,tt2380307
+74,Amadeus,"['Biography', 'Drama', 'Music']",8.4,top74,1984,tt0086879
+75,The Boat,"['Drama', 'War']",8.4,top75,1981,tt0082096
+76,Avengers: Endgame,"['Action', 'Adventure', 'Drama']",8.4,top76,2019,tt4154796
+77,Joker,"['Crime', 'Drama', 'Thriller']",8.4,top77,2019,tt7286456
+78,Your Name.,"['Animation', 'Drama', 'Fantasy']",8.4,top78,2016,tt5311514
+79,3 Idiots,"['Comedy', 'Drama']",8.4,top79,2009,tt1187043
+80,High and Low,"['Crime', 'Drama', 'Mystery']",8.4,top80,1963,tt0057565
+81,Capernaum,['Drama'],8.4,top81,2018,tt8267604
+82,Come and See,"['Drama', 'Thriller', 'War']",8.4,top82,1985,tt0091251
+83,Toy Story,"['Animation', 'Adventure', 'Comedy']",8.3,top83,1995,tt0114709
+84,American Beauty,['Drama'],8.3,top84,1999,tt0169547
+85,Braveheart,"['Biography', 'Drama', 'History']",8.3,top85,1995,tt0112573
+86,Princess Mononoke,"['Animation', 'Action', 'Adventure']",8.3,top86,1997,tt0119698
+87,Good Will Hunting,"['Drama', 'Romance']",8.3,top87,1997,tt0119217
+88,Once Upon a Time in America,"['Crime', 'Drama']",8.3,top88,1984,tt0087843
+89,Singin' in the Rain,"['Comedy', 'Musical', 'Romance']",8.3,top89,1952,tt0045152
+90,Requiem for a Dream,['Drama'],8.3,top90,2000,tt0180093
+91,Toy Story 3,"['Animation', 'Adventure', 'Comedy']",8.3,top91,2010,tt0435761
+92,Star Wars: Episode VI - Return of the Jedi,"['Action', 'Adventure', 'Fantasy']",8.3,top92,1983,tt0086190
+93,Eternal Sunshine of the Spotless Mind,"['Drama', 'Romance', 'Sci-Fi']",8.3,top93,2004,tt0338013
+94,2001: A Space Odyssey,"['Adventure', 'Sci-Fi']",8.3,top94,1968,tt0062622
+95,The Hunt,['Drama'],8.3,top95,2012,tt2106476
+96,Reservoir Dogs,"['Crime', 'Thriller']",8.3,top96,1992,tt0105236
+97,Ikiru,['Drama'],8.3,top97,1952,tt0044741
+98,Lawrence of Arabia,"['Adventure', 'Biography', 'Drama']",8.3,top98,1962,tt0056172
+99,Citizen Kane,"['Drama', 'Mystery']",8.3,top99,1941,tt0033467
+100,M,"['Crime', 'Mystery', 'Thriller']",8.3,top100,1931,tt0022100
