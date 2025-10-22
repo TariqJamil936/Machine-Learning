@@ -1,0 +1,7 @@
+📘 Working with JSON and SQL Data using Pandas
+
+This section demonstrates how Pandas can easily handle data from **JSON files and SQL databases**, expanding beyond just CSV processing. Using the `read_json()` function, Pandas can load both local and remote JSON data directly into a DataFrame. For example, a local file such as `train.json` can be read easily, while data from an online API like *ExchangeRate API* (`https://api.exchangerate-api.com/v4/latest/INR`) can also be fetched and converted into a structured DataFrame without any additional parsing steps. This makes working with web APIs and real-time data simple and efficient.
+
+For relational databases, Pandas integrates seamlessly with **MySQL** using the `mysql.connector` library. After establishing a connection to the MySQL server (in this case, a local database named `world`), data can be fetched directly using `pd.read_sql_query()`. For example, the query `"SELECT * FROM countrylanguage"` retrieves an entire table from the database and loads it into a DataFrame, allowing further data analysis or manipulation in Python.
+
+Overall, this section shows how Pandas acts as a universal data bridge — efficiently connecting to different sources such as **local JSON files, online APIs, and SQL databases** — providing a consistent and powerful way to load and work with structured data for analytics and machine learning projects.
