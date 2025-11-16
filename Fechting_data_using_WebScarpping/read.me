@@ -1,0 +1,123 @@
+# 🕸️ Web Scraping with Python
+
+A simple and beginner-friendly project demonstrating how to scrape data from websites using **Requests** and **BeautifulSoup**.  
+This project is suitable for Data Science students, automation beginners, or anyone who wants to extract data from the web.
+
+---
+
+## ⭐ Features
+- Fetch HTML from websites  
+- Parse pages using BeautifulSoup  
+- Extract text, links, and content using classes/IDs  
+- Save data into CSV  
+- Organized folder structure  
+- Beginner-friendly code  
+
+---
+
+## 📁 Project Structure
+
+```
+web-scraping-project/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── src/
+│   ├── basic_scraper.py
+│   └── scraper_utils.py
+│
+└── data/
+    └── output.csv
+```
+
+---
+
+## 🛠️ Technologies Used
+- **Python 3**
+- **Requests**
+- **BeautifulSoup4**
+- (Optional) Pandas, Selenium
+
+---
+
+## 📦 Installation
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Or manually:
+
+```bash
+pip install requests beautifulsoup4 pandas
+```
+
+---
+
+## 🚀 How to Run
+
+### **1. Run Basic Scraper**
+```bash
+python src/basic_scraper.py
+```
+
+### **basic_scraper.py Example**
+```python
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+url = "https://example.com"
+
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+
+titles = soup.find_all("h2")
+
+data = [t.text.strip() for t in titles]
+
+df = pd.DataFrame({"Title": data})
+df.to_csv("../data/output.csv", index=False)
+
+print("Scraping complete! Saved to data/output.csv")
+```
+
+---
+
+## 🔍 How to Customize Scraping
+To extract elements with a class:
+
+```python
+soup.find_all("div", class_="product-name")
+```
+
+Extract links:
+
+```python
+link.get("href")
+```
+
+---
+
+## ⚠️ Important
+- Always check website **robots.txt**
+- Scrape ethically—avoid sending too many requests
+- For JavaScript-heavy sites, use **Selenium**
+
+---
+
+## 🤝 Contributing
+Pull requests are welcome to add new scrapers or improve code quality.
+
+---
+
+## 👤 Author
+**Tariq Jamil**  
+Data Science Student | Python, ML & AI Enthusiast
+
+---
+
