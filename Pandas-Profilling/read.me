@@ -1,0 +1,82 @@
+ydata-profiling (formerly pandas-profiling)
+Exploratory Data Analysis (EDA) in a single line of code.
+ydata-profiling delivers an extended analysis of a DataFrame without writing custom code for every chart and statistic. It generates an interactive HTML report containing descriptive statistics, correlation matrices, quantile statistics, and detailed distribution plots.
+🚀 Key Features
+Type Inference: Automatically detects numerical, categorical, and boolean features.
+Essentials: Type, unique values, missing values, most frequent values, variable size.
+Quantile Statistics: Minimum value, Q1, median, Q3, maximum, range, interquartile range.
+Descriptive Statistics: Mean, mode, standard deviation, sum, median absolute deviation, coefficient of variation, kurtosis, skewness.
+Histograms: Visualization of distributions for every variable.
+Correlations: Spearman, Pearson, Kendall, Cramér's V, and Phik correlation matrices with heatmaps.
+Missing Values: Matrix, Count, Heatmap, and Dendrogram of missing data patterns.
+Text Analysis: Learn about categories (Uppercase, Space), Script (Latin, Cyrillic), and Blocks (ASCII) for text data.
+📦 Installation
+You can install ydata-profiling using pip or conda.
+Using pip
+pip install ydata-profiling
+
+
+Using conda
+conda install -c conda-forge ydata-profiling
+
+
+> Note: The package was previously named pandas-profiling. If you are using an older version, please upgrade to ydata-profiling for the latest features.
+💻 Usage
+1. Basic Usage (Generate & Save Report)
+The most common use case is to load a dataset and save the report as an HTML file.
+import pandas as pd
+from ydata_profiling import ProfileReport
+
+# Load your dataset
+df = pd.read_csv("my_dataset.csv")
+
+# Generate the profile report
+profile = ProfileReport(df, title="Pandas Profiling Report")
+
+# Save to file
+profile.to_file("my_report.html")
+
+
+2. Usage in Jupyter Notebooks
+If you are working inside Jupyter (Lab/Notebook), you can render the widgets directly in the cell.
+# Render the interactive widget
+profile.to_widgets()
+
+# OR render as an Iframe (better for GitHub sharing)
+profile.to_notebook_iframe()
+
+
+3. Usage with Large Datasets (Minimal Mode)
+Generating correlation matrices and deep statistical analysis can be slow on large datasets (>1 million rows). Use minimal=True to disable expensive computations.
+profile = ProfileReport(df, minimal=True)
+profile.to_file("large_dataset_report.html")
+
+
+⚙️ Advanced Configuration
+You can control exactly what is calculated by passing a configuration dictionary or loading a YAML configuration file.
+Example: Disabling Correlations to save time
+profile = ProfileReport(
+    df, 
+    title="No Correlations Report", 
+    correlations={
+        "pearson": {"calculate": False},
+        "spearman": {"calculate": False},
+        "kendall": {"calculate": False},
+        "phi_k": {"calculate": False},
+        "cramers": {"calculate": False},
+    }
+)
+
+
+📊 Command Line Usage
+You can also use the library directly from the command line to profile a CSV file without writing a Python script.
+ydata-profiling my_dataset.csv report.html
+
+
+🤝 Integrations
+ydata-profiling integrates seamlessly with other popular data tools:
+Streamlit: easily embed reports in Streamlit apps using streamlit_pandas_profiling.
+Dagster/Airflow: Automate data quality checks in your pipelines.
+Kaggle: Pre-installed in Kaggle kernels for instant EDA.
+📄 License
+This project is licensed under the MIT License.
