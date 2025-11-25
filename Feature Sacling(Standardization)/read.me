@@ -1,0 +1,152 @@
+
+---
+
+# 1️⃣ **Python Code to Generate Plots and Save Images**
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+
+# Example dataset
+df = pd.DataFrame({
+    'Age': [22, 25, 47, 52, 46, 56],
+    'EstimatedSalary': [15000, 29000, 48000, 60000, 52000, 80000],
+    'Purchased': [0, 0, 1, 1, 1, 1]
+})
+
+# Split features and target
+X = df[['Age', 'EstimatedSalary']]
+y = df['Purchased']
+
+# Train-test split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+
+# Original data visualization
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12,5))
+ax1.hist(X_train['Age'], bins=5, color='skyblue', edgecolor='black')
+ax1.set_title('Original Age Distribution')
+ax2.hist(X_train['EstimatedSalary'], bins=5, color='lightgreen', edgecolor='black')
+ax2.set_title('Original Salary Distribution')
+plt.savefig('original_distribution.png')  # Save image
+plt.close()
+
+# StandardScaler
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# Convert scaled data to DataFrame
+X_train_scaled_df = pd.DataFrame(X_train_scaled, columns=['Age', 'EstimatedSalary'])
+
+# Scaled data visualization
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12,5))
+ax1.hist(X_train_scaled_df['Age'], bins=5, color='skyblue', edgecolor='black')
+ax1.set_title('Standardized Age Distribution')
+ax2.hist(X_train_scaled_df['EstimatedSalary'], bins=5, color='lightgreen', edgecolor='black')
+ax2.set_title('Standardized Salary Distribution')
+plt.savefig('scaled_distribution.png')  # Save image
+plt.close()
+```
+
+✅ This will generate **two images**:
+
+* `original_distribution.png` → original feature distributions
+* `scaled_distribution.png` → standardized feature distributions
+
+---
+
+# 2️⃣ **GitHub README with Embedded Images**
+
+You can create a `README.md` like this:
+
+````markdown
+# Feature Scaling (Standardization)
+
+## Overview
+Feature Scaling is a preprocessing technique in machine learning that normalizes the range of independent variables (features).  
+**Standardization** transforms features to have mean = 0 and standard deviation = 1.
+
+---
+
+## Why Standardization is Important
+
+- Ensures all features contribute equally  
+- Improves convergence for gradient-based algorithms  
+- Corrects distance calculations for algorithms like KNN and K-Means  
+- Ensures fair regularization in models like Ridge and Lasso  
+
+---
+
+## Formula
+
+\[
+x' = \frac{x - \mu}{\sigma}
+\]
+
+Where:
+
+- x = original feature value  
+- μ = mean of the feature (from training data)  
+- σ = standard deviation of the feature (from training data)  
+- x' = standardized value  
+
+---
+
+## Visual Explanation
+
+### Original Feature Distributions
+![Original Distribution](original_distribution.png)
+
+### Standardized Feature Distributions
+![Standardized Distribution](scaled_distribution.png)
+
+> After standardization, all features are centered at 0 with standard deviation 1.
+
+---
+
+## Python Implementation
+
+```python
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+
+# Split features and target
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+
+# Standardize features
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+````
+
+---
+
+## Key Notes
+
+* Fit the scaler **only on training data**
+* Transform the test set using **training statistics**
+* **Do not scale y** for classification; optional for regression
+
+---
+
+## References
+
+* [Scikit-learn StandardScaler Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+* Géron, A. *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*
+
+```
+
+---
+
+# 3️⃣ **Instructions for GitHub**
+
+1. Run the Python code above to generate the two images.  
+2. Place `original_distribution.png` and `scaled_distribution.png` in the same folder as your `README.md`.  
+3. Push both images and the README to your GitHub repository.  
+
+✅ Now your README will **visually show the effect of standardization**, making it professional and easy to understand.  
+
+---
+
